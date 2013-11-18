@@ -8,6 +8,6 @@
     </property>
     <property name="show_sql">true</property>
     <property name="dialect">NHibernate.Dialect.MsSql2008Dialect</property>
-    <mapping assembly="NHibernateSample.Domain"/>
+    <mapping assembly="Domain"/>
   </session-factory>
 </hibernate-configuration>

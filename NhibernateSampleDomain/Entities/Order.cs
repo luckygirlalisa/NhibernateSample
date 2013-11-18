@@ -1,4 +1,4 @@
-﻿namespace NhibernateSample.Domain.Entities
+﻿namespace Domain.Entities
 {
     class Order
     {

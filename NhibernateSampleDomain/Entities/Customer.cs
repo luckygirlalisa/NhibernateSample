@@ -1,4 +1,4 @@
-﻿namespace NHibernateSample.Domain.Entities
+﻿namespace Domain.Entities
 {
     public class Customer
     {

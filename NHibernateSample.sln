@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateSample.Data", "NHibernateSample\NHibernateSample.Data.csproj", "{BA25E166-3B5C-4ACD-BF71-B390D58C16A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "NHibernateSample\Helper.csproj", "{BA25E166-3B5C-4ACD-BF71-B390D58C16A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Data.Test", "Nhibernate.Data.Test\NHibernate.Data.Test.csproj", "{622260A5-CE21-43F1-ACE2-FE916C1D9B4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappingTest", "Nhibernate.Data.Test\MappingTest.csproj", "{622260A5-CE21-43F1-ACE2-FE916C1D9B4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateSample.Domain", "NhibernateSampleDomain\NHibernateSample.Domain.csproj", "{177BE864-2253-437F-9DD9-37FD95BC7F59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "NhibernateSampleDomain\Domain.csproj", "{177BE864-2253-437F-9DD9-37FD95BC7F59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

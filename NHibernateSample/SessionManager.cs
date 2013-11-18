@@ -1,13 +1,13 @@
-﻿using NHibernate;
-using NHibernateSample.Domain.Entities;
+﻿using Domain.Entities;
+using NHibernate;
 
-namespace NHibernateSample.Data
+namespace Data
 {
-    public class NHibernateSample
+    public class SessionManager
     {
         protected ISession Session { get; set; }
 
-        public NHibernateSample(ISession session)
+        public SessionManager(ISession session)
         {
             Session = session;
         }

@@ -1,15 +1,15 @@
 ﻿using NHibernate;
 using NHibernate.Cfg;
 
-namespace NHibernateSample.Data
+namespace Helper
 {
-    public class NhibernateHelper
+    public class SessionCreator
     {
-        private ISessionFactory _sessionFactory;
+        private readonly ISessionFactory sessionFactory;
 
-        public NhibernateHelper()
+        public SessionCreator()
         {
-            _sessionFactory = GetSessionFactory();
+            sessionFactory = GetSessionFactory();
         }
 
         private ISessionFactory GetSessionFactory()
@@ -19,7 +19,7 @@ namespace NHibernateSample.Data
 
         public ISession GetSession()
         {
-            return _sessionFactory.OpenSession();
+            return sessionFactory.OpenSession();
         }
     }
 }
