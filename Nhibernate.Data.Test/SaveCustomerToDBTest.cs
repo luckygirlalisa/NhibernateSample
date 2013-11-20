@@ -1,12 +1,12 @@
-﻿using Data;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Helper;
+using NHibernate.Util;
 using NUnit.Framework;
 
 namespace MappingTest
 {
     [TestFixture]
-    public class CustomerMappingTest
+    public class SaveCustomerToDBTest
     {
         private SessionManager sessionManager;
         
@@ -20,13 +20,15 @@ namespace MappingTest
         [Test]
         public void should_save_data_to_db_and_get_data_from_db_correctly()
         {
-            var sourceCustomer = new Customer { FirstName = "Zhanfei", LastName = "Xiao" };
+            var sourceCustomer = new Customer { FirstName = "Xiaozhi", LastName = "Xiao" };
             
             sessionManager.CreateCustomer(sourceCustomer);
-            Customer customer = sessionManager.GetCustomerById(1);
             
-            int customerId = customer.Id;
-            Assert.AreEqual(1, customerId);
+            Customer customer = sessionManager.GetCustomerByFirstName("Xiaozhi").First() as Customer;
+
+            Assert.That(customer.FirstName, Is.EqualTo("Xiaozhi"));
         }
+
+       
     }
 }
